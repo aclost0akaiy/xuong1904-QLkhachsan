@@ -467,7 +467,7 @@
         ZmZmZmZmZmZm8/L/AYQhsH6ufIE9AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2GradientButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDichVu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAABGdBTUEAALGPC/xhBQAAFMhJREFUeF7t
         3QmQZVV9x3FhkGFfBYQZRCMIYhIXFFQ06ECMUaMmGDUuRMWoiIIrKEaUUlPGEAULTVSiJcaVQhEFJqjR
@@ -914,7 +914,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdMAAABuCAYAAAB83fmyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAW0FJREFUeF7tfXd8FNX+9vvn+7vvvddrV+yAkGzJbrKb3gMk1NAJvffee5MiLfTe
+        vQAADr0BR/uQrQAAW0FJREFUeF7tfXd8FNX+9vvn+7vvvddrV+yAkGzJbrKb3gMk1NAJvffee5MiLfTe
         e28CCipFUBGlSLNRBaRIByWN4vN+nrM7yWR2ZrNJCL8rnO/n83wUmDMze2bmPOfb/4+fyQkJCQkJCQmJ
         guP/aP9CQkJCQkJCIn+QZCohISEhIVFISDKVkJCQkJAoJCSZSkhISEhIFBKSTCUkJCQkJAoJSaYSEhIS
         EhKFhCRTCQkJCQmJQuJ/hUzNpmAEmkMQYg5FlCUMsZZwxFkiEG+JREI2ogTisxEtECcQkwMzEYvYXIgT

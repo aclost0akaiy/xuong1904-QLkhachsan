@@ -10,11 +10,35 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmPhong : Form
+    public partial class frmPhong : frmBase
     {
         public frmPhong()
         {
             InitializeComponent();
+        }
+
+        private void guna2TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (guna2TabControl1.SelectedTab != null)
+            {
+                if (guna2TabControl1.SelectedTab.Name == "tabLoaiPhong")
+                {
+                    TabPage tab = guna2TabControl1.SelectedTab;
+                    frmLoaiPhong frm = new frmLoaiPhong();
+                    frm.TopLevel = false;
+                    frm.FormBorderStyle = FormBorderStyle.None;
+                    frm.Dock = DockStyle.Fill;
+
+                    tab.Controls.Add(frm);
+                    frm.Show();
+                    return;
+                }
+            }
+        }
+
+        private void frmPhong_Load(object sender, EventArgs e)
+        {
+            lbChucNangText.Text = "Phòng";
         }
     }
 }

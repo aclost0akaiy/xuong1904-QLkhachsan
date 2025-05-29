@@ -37,6 +37,7 @@
             ClientSize = new Size(1342, 805);
             Name = "frmKhachHang";
             Text = "frmKhachHang";
+            Load += frmKhachHang_Load;
             ResumeLayout(false);
         }
 

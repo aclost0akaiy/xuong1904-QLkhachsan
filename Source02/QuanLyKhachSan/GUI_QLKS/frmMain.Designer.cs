@@ -57,7 +57,7 @@
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnDichVu = new Guna.UI2.WinForms.Guna2GradientButton();
             btnQLDatPhong = new Guna.UI2.WinForms.Guna2GradientButton();
             btnPhong = new Guna.UI2.WinForms.Guna2GradientButton();
             btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -83,7 +83,7 @@
             guna2Panel1.BackColor = Color.FromArgb(40, 42, 52);
             guna2Panel1.Controls.Add(guna2GradientButton7);
             guna2Panel1.Controls.Add(guna2Separator1);
-            guna2Panel1.Controls.Add(guna2GradientButton5);
+            guna2Panel1.Controls.Add(btnDichVu);
             guna2Panel1.Controls.Add(btnQLDatPhong);
             guna2Panel1.Controls.Add(btnPhong);
             guna2Panel1.Controls.Add(btnKhachHang);
@@ -133,32 +133,33 @@
             guna2Separator1.Size = new Size(200, 10);
             guna2Separator1.TabIndex = 7;
             // 
-            // guna2GradientButton5
+            // btnDichVu
             // 
-            guna2GradientButton5.Animated = true;
-            guna2GradientButton5.BackColor = Color.Transparent;
-            guna2GradientButton5.CustomImages.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton5.CustomizableEdges = customizableEdges7;
-            guna2Transition1.SetDecoration(guna2GradientButton5, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2GradientButton5.FillColor = Color.Empty;
-            guna2GradientButton5.FillColor2 = Color.Empty;
-            guna2GradientButton5.Font = new Font("Segoe UI", 9F);
-            guna2GradientButton5.ForeColor = Color.White;
-            guna2GradientButton5.HoverState.FillColor = Color.FromArgb(228, 62, 103);
-            guna2GradientButton5.HoverState.FillColor2 = Color.FromArgb(40, 42, 52);
-            guna2GradientButton5.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2GradientButton5.Image = (Image)resources.GetObject("guna2GradientButton5.Image");
-            guna2GradientButton5.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton5.ImageSize = new Size(25, 25);
-            guna2GradientButton5.Location = new Point(11, 385);
-            guna2GradientButton5.Name = "guna2GradientButton5";
-            guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2GradientButton5.Size = new Size(180, 45);
-            guna2GradientButton5.TabIndex = 6;
-            guna2GradientButton5.Text = "Likes";
-            guna2GradientButton5.TextAlign = HorizontalAlignment.Left;
-            guna2GradientButton5.TextOffset = new Point(50, 0);
-            guna2GradientButton5.UseTransparentBackground = true;
+            btnDichVu.Animated = true;
+            btnDichVu.BackColor = Color.Transparent;
+            btnDichVu.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnDichVu.CustomizableEdges = customizableEdges7;
+            guna2Transition1.SetDecoration(btnDichVu, Guna.UI2.AnimatorNS.DecorationType.None);
+            btnDichVu.FillColor = Color.Empty;
+            btnDichVu.FillColor2 = Color.Empty;
+            btnDichVu.Font = new Font("Segoe UI", 9F);
+            btnDichVu.ForeColor = Color.White;
+            btnDichVu.HoverState.FillColor = Color.FromArgb(228, 62, 103);
+            btnDichVu.HoverState.FillColor2 = Color.FromArgb(40, 42, 52);
+            btnDichVu.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDichVu.Image = (Image)resources.GetObject("btnDichVu.Image");
+            btnDichVu.ImageAlign = HorizontalAlignment.Left;
+            btnDichVu.ImageSize = new Size(25, 25);
+            btnDichVu.Location = new Point(11, 385);
+            btnDichVu.Name = "btnDichVu";
+            btnDichVu.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnDichVu.Size = new Size(180, 45);
+            btnDichVu.TabIndex = 6;
+            btnDichVu.Text = "Dịch Vụ";
+            btnDichVu.TextAlign = HorizontalAlignment.Left;
+            btnDichVu.TextOffset = new Point(50, 0);
+            btnDichVu.UseTransparentBackground = true;
+            btnDichVu.Click += btnDichVu_Click;
             // 
             // btnQLDatPhong
             // 
@@ -405,6 +406,7 @@
             pnMain.Name = "pnMain";
             pnMain.Size = new Size(1378, 974);
             pnMain.TabIndex = 6;
+            pnMain.Paint += pnMain_Paint;
             // 
             // frmMain
             // 
@@ -441,7 +443,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton btn_hide;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDichVu;
         private Guna.UI2.WinForms.Guna2GradientButton btnQLDatPhong;
         private Guna.UI2.WinForms.Guna2GradientButton btnPhong;
         private Guna.UI2.WinForms.Guna2GradientButton btnKhachHang;

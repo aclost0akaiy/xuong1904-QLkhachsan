@@ -78,5 +78,15 @@ namespace GUI_QLKS
         {
             openChildForm(new frmQLDatPhong());
         }
+
+        private void pnMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmDichVu());
+        }
     }
 }
