@@ -60,8 +60,23 @@ namespace GUI_QLKS
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            
+
             openChildForm(new frmNhanVien());
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmKhachHang());
+        }
+
+        private void btnPhong_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmPhong());
+        }
+
+        private void btnQLDatPhong_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmQLDatPhong());
         }
     }
 }

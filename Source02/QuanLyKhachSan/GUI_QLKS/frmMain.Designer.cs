@@ -59,8 +59,8 @@
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             btnQLDatPhong = new Guna.UI2.WinForms.Guna2GradientButton();
-            btnDichVu = new Guna.UI2.WinForms.Guna2GradientButton();
             btnPhong = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             btnNhanVien = new Guna.UI2.WinForms.Guna2GradientButton();
             btnDatPhong = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -85,8 +85,8 @@
             guna2Panel1.Controls.Add(guna2Separator1);
             guna2Panel1.Controls.Add(guna2GradientButton5);
             guna2Panel1.Controls.Add(btnQLDatPhong);
-            guna2Panel1.Controls.Add(btnDichVu);
             guna2Panel1.Controls.Add(btnPhong);
+            guna2Panel1.Controls.Add(btnKhachHang);
             guna2Panel1.Controls.Add(btnNhanVien);
             guna2Panel1.Controls.Add(btnDatPhong);
             guna2Panel1.Controls.Add(guna2PictureBox1);
@@ -182,44 +182,18 @@
             btnQLDatPhong.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnQLDatPhong.Size = new Size(180, 45);
             btnQLDatPhong.TabIndex = 5;
-            btnQLDatPhong.Text = "IG TV";
-            btnQLDatPhong.TextAlign = HorizontalAlignment.Left;
+            btnQLDatPhong.Text = "QL Đặt Phòng";
+            btnQLDatPhong.TextAlign = HorizontalAlignment.Right;
             btnQLDatPhong.TextOffset = new Point(50, 0);
             btnQLDatPhong.UseTransparentBackground = true;
-            // 
-            // btnDichVu
-            // 
-            btnDichVu.Animated = true;
-            btnDichVu.BackColor = Color.Transparent;
-            btnDichVu.CustomImages.ImageAlign = HorizontalAlignment.Left;
-            btnDichVu.CustomizableEdges = customizableEdges11;
-            guna2Transition1.SetDecoration(btnDichVu, Guna.UI2.AnimatorNS.DecorationType.None);
-            btnDichVu.FillColor = Color.Empty;
-            btnDichVu.FillColor2 = Color.Empty;
-            btnDichVu.Font = new Font("Segoe UI", 9F);
-            btnDichVu.ForeColor = Color.White;
-            btnDichVu.HoverState.FillColor = Color.FromArgb(228, 62, 103);
-            btnDichVu.HoverState.FillColor2 = Color.FromArgb(40, 42, 52);
-            btnDichVu.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDichVu.Image = (Image)resources.GetObject("btnDichVu.Image");
-            btnDichVu.ImageAlign = HorizontalAlignment.Left;
-            btnDichVu.ImageSize = new Size(25, 25);
-            btnDichVu.Location = new Point(11, 279);
-            btnDichVu.Name = "btnDichVu";
-            btnDichVu.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnDichVu.Size = new Size(180, 45);
-            btnDichVu.TabIndex = 4;
-            btnDichVu.Text = "Direct";
-            btnDichVu.TextAlign = HorizontalAlignment.Left;
-            btnDichVu.TextOffset = new Point(50, 0);
-            btnDichVu.UseTransparentBackground = true;
+            btnQLDatPhong.Click += btnQLDatPhong_Click;
             // 
             // btnPhong
             // 
             btnPhong.Animated = true;
             btnPhong.BackColor = Color.Transparent;
             btnPhong.CustomImages.ImageAlign = HorizontalAlignment.Left;
-            btnPhong.CustomizableEdges = customizableEdges13;
+            btnPhong.CustomizableEdges = customizableEdges11;
             guna2Transition1.SetDecoration(btnPhong, Guna.UI2.AnimatorNS.DecorationType.None);
             btnPhong.FillColor = Color.Empty;
             btnPhong.FillColor2 = Color.Empty;
@@ -231,15 +205,44 @@
             btnPhong.Image = (Image)resources.GetObject("btnPhong.Image");
             btnPhong.ImageAlign = HorizontalAlignment.Left;
             btnPhong.ImageSize = new Size(25, 25);
-            btnPhong.Location = new Point(11, 226);
+            btnPhong.Location = new Point(11, 279);
             btnPhong.Name = "btnPhong";
-            btnPhong.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnPhong.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnPhong.Size = new Size(180, 45);
-            btnPhong.TabIndex = 3;
-            btnPhong.Text = "Notifications";
+            btnPhong.TabIndex = 4;
+            btnPhong.Text = "Phòng";
             btnPhong.TextAlign = HorizontalAlignment.Left;
             btnPhong.TextOffset = new Point(50, 0);
             btnPhong.UseTransparentBackground = true;
+            btnPhong.Click += btnPhong_Click;
+            // 
+            // btnKhachHang
+            // 
+            btnKhachHang.Animated = true;
+            btnKhachHang.BackColor = Color.Transparent;
+            btnKhachHang.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnKhachHang.CustomizableEdges = customizableEdges13;
+            guna2Transition1.SetDecoration(btnKhachHang, Guna.UI2.AnimatorNS.DecorationType.None);
+            btnKhachHang.FillColor = Color.Empty;
+            btnKhachHang.FillColor2 = Color.Empty;
+            btnKhachHang.Font = new Font("Segoe UI", 9F);
+            btnKhachHang.ForeColor = Color.White;
+            btnKhachHang.HoverState.FillColor = Color.FromArgb(228, 62, 103);
+            btnKhachHang.HoverState.FillColor2 = Color.FromArgb(40, 42, 52);
+            btnKhachHang.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKhachHang.Image = (Image)resources.GetObject("btnKhachHang.Image");
+            btnKhachHang.ImageAlign = HorizontalAlignment.Left;
+            btnKhachHang.ImageSize = new Size(25, 25);
+            btnKhachHang.Location = new Point(11, 226);
+            btnKhachHang.Name = "btnKhachHang";
+            btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnKhachHang.Size = new Size(180, 45);
+            btnKhachHang.TabIndex = 3;
+            btnKhachHang.Text = "Khách Hàng";
+            btnKhachHang.TextAlign = HorizontalAlignment.Left;
+            btnKhachHang.TextOffset = new Point(50, 0);
+            btnKhachHang.UseTransparentBackground = true;
+            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // btnNhanVien
             // 
@@ -263,7 +266,7 @@
             btnNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnNhanVien.Size = new Size(180, 45);
             btnNhanVien.TabIndex = 2;
-            btnNhanVien.Text = "Explorer";
+            btnNhanVien.Text = "Nhân Viên";
             btnNhanVien.TextAlign = HorizontalAlignment.Left;
             btnNhanVien.TextOffset = new Point(50, 0);
             btnNhanVien.UseTransparentBackground = true;
@@ -291,7 +294,7 @@
             btnDatPhong.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnDatPhong.Size = new Size(180, 45);
             btnDatPhong.TabIndex = 1;
-            btnDatPhong.Text = "Feed";
+            btnDatPhong.Text = "Đặt Phòng";
             btnDatPhong.TextAlign = HorizontalAlignment.Left;
             btnDatPhong.TextOffset = new Point(50, 0);
             btnDatPhong.UseTransparentBackground = true;
@@ -440,8 +443,8 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton btnQLDatPhong;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDichVu;
         private Guna.UI2.WinForms.Guna2GradientButton btnPhong;
+        private Guna.UI2.WinForms.Guna2GradientButton btnKhachHang;
         private Guna.UI2.WinForms.Guna2GradientButton btnNhanVien;
         private Guna.UI2.WinForms.Guna2GradientButton btnDatPhong;
         private Panel pnMain;

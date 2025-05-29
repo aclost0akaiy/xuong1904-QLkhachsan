@@ -120,6 +120,9 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <metadata name="guna2Transition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>301, 17</value>
   </metadata>
@@ -630,7 +633,7 @@
         AAAAAAAAAADg7P0/tkbQxlFhCQEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnDichVu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPhong.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAABGdBTUEAALGPC/xhBQAADrpJREFUeF7t
         3T2IbWt9BnDNMQRzBUVChMhVsLGw0GsVUYgGIRamSCCtkRubhEA6L9qFNIkfCSmC1pIUQsAipYqmCHYp
@@ -699,7 +702,7 @@
         QmCC
 </value>
   </data>
-  <data name="btnPhong.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnKhachHang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABHhJREFUeF7t
         3dvrZWMcx/ExDiPHhnAhxSgSuaBJOdRwqUgyEbmScDuDNBMR5UIulDRJKcebifwBiguHMmam5IZBOYUc
@@ -911,7 +914,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdMAAABuCAYAAAB83fmyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAW0FJREFUeF7tfXd8FNX+9vvn+7vvvddrV+yAkGzJbrKb3gMk1NAJvffee5MiLfTe
+        vgAADr4B6kKxwAAAW0FJREFUeF7tfXd8FNX+9vvn+7vvvddrV+yAkGzJbrKb3gMk1NAJvffee5MiLfTe
         e28CCipFUBGlSLNRBaRIByWN4vN+nrM7yWR2ZrNJCL8rnO/n83wUmDMze2bmPOfb/4+fyQkJCQkJCQmJ
         guP/aP9CQkJCQkJCIn+QZCohISEhIVFISDKVkJCQkJAoJCSZSkhISEhIFBKSTCUkJCQkJAoJSaYSEhIS
         EhKFhCRTCQkJCQmJQuJ/hUzNpmAEmkMQYg5FlCUMsZZwxFkiEG+JREI2ogTisxEtECcQkwMzEYvYXIgT
