@@ -94,12 +94,35 @@ namespace DAL_QLKS
             return list.Count > 0 ? list[0] : null;
         }
 
-        public void insertNhanVien(NhanVien nv)
+        //public void insertNhanVien(NhanVien nv)
+        //{
+        //    try
+        //    {
+        //        string sql = @"INSERT INTO NhanVien (MaNV, HoTen, Email, MatKhau, GioiTinh, DiaChi, VaiTro, TinhTrang) 
+        //           VALUES (@0, @1, @2, @3, @4, @5, @6, @7)";
+        //        List<object> thamSo = new List<object>();
+        //        thamSo.Add(nv.MaNV);
+        //        thamSo.Add(nv.HoTen);
+        //        thamSo.Add(nv.Email);
+        //        thamSo.Add(nv.MatKhau);
+        //        thamSo.Add(nv.GioiTinh);
+        //        thamSo.Add(nv.DiaChi);
+        //        thamSo.Add(nv.VaiTro);
+        //        thamSo.Add(nv.TinhTrang);
+        //        DBUtil.Update(sql, thamSo);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw;
+        //    }
+
+        //}
+        public string insertNhanVien(NhanVien nv)
         {
             try
             {
                 string sql = @"INSERT INTO NhanVien (MaNV, HoTen, Email, MatKhau, GioiTinh, DiaChi, VaiTro, TinhTrang) 
-                   VALUES (@0, @1, @2, @3, @4, @5, @6, @7)";
+                OUTPUT INSERTED.MaNV   VALUES (@0, @1, @2, @3, @4, @5, @6, @7)";
                 List<object> thamSo = new List<object>();
                 thamSo.Add(nv.MaNV);
                 thamSo.Add(nv.HoTen);
@@ -109,7 +132,7 @@ namespace DAL_QLKS
                 thamSo.Add(nv.DiaChi);
                 thamSo.Add(nv.VaiTro);
                 thamSo.Add(nv.TinhTrang);
-                DBUtil.Update(sql, thamSo);
+                return (string)DBUtil.ScalarQuery(sql, thamSo);
             }
             catch (Exception e)
             {

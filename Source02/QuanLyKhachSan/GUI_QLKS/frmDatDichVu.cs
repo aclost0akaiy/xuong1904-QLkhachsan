@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmQLDatPhong : frmBase
+    public partial class frmDatDichVu : Form
     {
-        public frmQLDatPhong()
+        public frmDatDichVu()
         {
             InitializeComponent();
-        }
-
-        private void guna2GroupBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

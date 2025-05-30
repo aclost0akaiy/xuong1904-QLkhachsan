@@ -69,7 +69,7 @@ namespace BUS_QLKS
                 {
                     return "Email đã tồn tại.";
                 }
-                dalNhanVien.insertNhanVien(nv);
+                string result = dalNhanVien.insertNhanVien(nv);
                 return string.Empty;
             }
             catch (Exception ex)
