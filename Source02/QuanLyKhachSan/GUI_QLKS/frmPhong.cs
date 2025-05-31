@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmPhong : frmBase
+    public partial class frmPhong : Form
     {
         public frmPhong()
         {
             InitializeComponent();
+        }
+
+        private void lbChucNangText_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void guna2TabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -36,9 +41,9 @@ namespace GUI_QLKS
             }
         }
 
-        private void frmPhong_Load(object sender, EventArgs e)
+        private void frmPhong2_Load(object sender, EventArgs e)
         {
-            lbChucNangText.Text = "Phòng";
+
         }
     }
 }

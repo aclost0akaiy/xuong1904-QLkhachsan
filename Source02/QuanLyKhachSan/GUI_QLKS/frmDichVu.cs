@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmDichVu : frmBase
+    public partial class frmDichVu : Form
     {
         public frmDichVu()
         {
@@ -34,11 +34,6 @@ namespace GUI_QLKS
                     return;
                 }
             }
-        }
-
-        private void frmDichVu_Load(object sender, EventArgs e)
-        {
-            lbChucNangText.Text = "Dịch Vụ";
         }
     }
 }

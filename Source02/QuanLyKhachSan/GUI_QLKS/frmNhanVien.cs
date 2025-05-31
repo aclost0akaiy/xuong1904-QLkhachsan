@@ -12,19 +12,12 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmNhanVien : frmBase
+    public partial class frmNhanVien : Form
     {
         BUSNhanVien busNhanVien = new BUSNhanVien();
         public frmNhanVien()
         {
             InitializeComponent();
-        }
-
-        private void frmNhanVien_Load(object sender, EventArgs e)
-        {
-            lbChucNangText.Text = "Quản Lý Nhân Viên";
-            ClearForm();
-            LoadDanhSachNhanVien();
         }
 
         private void LoadDanhSachNhanVien()
@@ -59,6 +52,12 @@ namespace GUI_QLKS
             rdoHoatDong.Checked = true;
         }
 
+        private void frmNhanVien2_Load(object sender, EventArgs e)
+        {
+            ClearForm();
+            LoadDanhSachNhanVien();
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
             string maNV = txtMaNV.Text.Trim();
@@ -69,7 +68,7 @@ namespace GUI_QLKS
             string gioitinh = cboGioiTinh.Text.Trim();
             string vaiTro = cboVaiTro.Text.Trim();
 
-            
+
             bool trangThai;
 
             if (rdoHoatDong.Checked)
@@ -80,7 +79,7 @@ namespace GUI_QLKS
             {
                 trangThai = false;
             }
-            if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(email) || 
+            if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(email) ||
                 string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(diachi))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin nhân viên.");
@@ -93,8 +92,8 @@ namespace GUI_QLKS
                 HoTen = hoTen,
                 Email = email,
                 MatKhau = matKhau,
-                DiaChi =diachi,
-                GioiTinh =gioitinh,
+                DiaChi = diachi,
+                GioiTinh = gioitinh,
                 VaiTro = vaiTro,
                 TinhTrang = trangThai
             };
@@ -131,7 +130,7 @@ namespace GUI_QLKS
             {
                 trangThai = false;
             }
-            if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(email) 
+            if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(email)
                 || string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(diachi))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin nhân viên.");
@@ -226,7 +225,7 @@ namespace GUI_QLKS
             txtEmail.Text = row.Cells["Email"].Value.ToString();
             txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
             txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
-                      
+
 
             bool trangThai = Convert.ToBoolean(row.Cells["TinhTrang"].Value);
             if (trangThai == false)

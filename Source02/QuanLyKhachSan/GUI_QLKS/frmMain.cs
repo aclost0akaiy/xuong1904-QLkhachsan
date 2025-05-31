@@ -76,7 +76,7 @@ namespace GUI_QLKS
 
         private void btnQLDatPhong_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmQLDatPhong());
+            openChildForm(new frmDatPhong());
         }
 
         private void pnMain_Paint(object sender, PaintEventArgs e)
