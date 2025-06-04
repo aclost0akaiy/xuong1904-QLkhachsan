@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_QLKS
 {
-    public partial class frmDatDichVu : Form
+    public partial class ListKhachHang : UserControl
     {
-        public frmDatDichVu()
+        public ListKhachHang()
         {
             InitializeComponent();
-        }
-
-        private void frmDatDichVu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

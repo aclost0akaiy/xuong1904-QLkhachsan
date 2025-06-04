@@ -68,10 +68,6 @@
             btnSua = new Guna.UI2.WinForms.Guna2Button();
             btnXoa = new Guna.UI2.WinForms.Guna2Button();
             btnThem = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            rdoKhongHoatDong = new Guna.UI2.WinForms.Guna2RadioButton();
-            rdoHoatDong = new Guna.UI2.WinForms.Guna2RadioButton();
-            label7 = new Label();
             txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             label5 = new Label();
             txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -84,6 +80,10 @@
             label2 = new Label();
             txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
+            label7 = new Label();
+            rdoHoatDong = new Guna.UI2.WinForms.Guna2RadioButton();
+            rdoKhongHoatDong = new Guna.UI2.WinForms.Guna2RadioButton();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             guna2Panel2.SuspendLayout();
@@ -297,73 +297,10 @@
             btnThem.Text = "Thêm";
             btnThem.Click += btnThem_Click;
             // 
-            // guna2Panel2
-            // 
-            guna2Panel2.BorderThickness = 1;
-            guna2Panel2.Controls.Add(rdoKhongHoatDong);
-            guna2Panel2.Controls.Add(rdoHoatDong);
-            guna2Panel2.CustomizableEdges = customizableEdges15;
-            guna2Panel2.Location = new Point(1199, 132);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Panel2.Size = new Size(118, 131);
-            guna2Panel2.TabIndex = 83;
-            // 
-            // rdoKhongHoatDong
-            // 
-            rdoKhongHoatDong.AutoSize = true;
-            rdoKhongHoatDong.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
-            rdoKhongHoatDong.CheckedState.BorderThickness = 0;
-            rdoKhongHoatDong.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            rdoKhongHoatDong.CheckedState.InnerColor = Color.White;
-            rdoKhongHoatDong.CheckedState.InnerOffset = -4;
-            rdoKhongHoatDong.ForeColor = Color.FromArgb(64, 0, 0);
-            rdoKhongHoatDong.Location = new Point(3, 59);
-            rdoKhongHoatDong.Name = "rdoKhongHoatDong";
-            rdoKhongHoatDong.Size = new Size(97, 24);
-            rdoKhongHoatDong.TabIndex = 1;
-            rdoKhongHoatDong.Text = "Tạm Khóa";
-            rdoKhongHoatDong.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            rdoKhongHoatDong.UncheckedState.BorderThickness = 2;
-            rdoKhongHoatDong.UncheckedState.FillColor = Color.Transparent;
-            rdoKhongHoatDong.UncheckedState.InnerColor = Color.Transparent;
-            // 
-            // rdoHoatDong
-            // 
-            rdoHoatDong.AutoSize = true;
-            rdoHoatDong.Checked = true;
-            rdoHoatDong.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
-            rdoHoatDong.CheckedState.BorderThickness = 0;
-            rdoHoatDong.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            rdoHoatDong.CheckedState.InnerColor = Color.White;
-            rdoHoatDong.CheckedState.InnerOffset = -4;
-            rdoHoatDong.ForeColor = Color.FromArgb(64, 0, 0);
-            rdoHoatDong.Location = new Point(3, 1);
-            rdoHoatDong.Name = "rdoHoatDong";
-            rdoHoatDong.Size = new Size(104, 24);
-            rdoHoatDong.TabIndex = 0;
-            rdoHoatDong.TabStop = true;
-            rdoHoatDong.Text = "Hoạt Động";
-            rdoHoatDong.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            rdoHoatDong.UncheckedState.BorderThickness = 2;
-            rdoHoatDong.UncheckedState.FillColor = Color.Transparent;
-            rdoHoatDong.UncheckedState.InnerColor = Color.Transparent;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F);
-            label7.ForeColor = Color.FromArgb(64, 0, 0);
-            label7.Location = new Point(1199, 103);
-            label7.Name = "label7";
-            label7.Size = new Size(78, 20);
-            label7.TabIndex = 82;
-            label7.Text = "Trạng Thái";
-            // 
             // txtMatKhau
             // 
             txtMatKhau.BorderRadius = 5;
-            txtMatKhau.CustomizableEdges = customizableEdges17;
+            txtMatKhau.CustomizableEdges = customizableEdges15;
             txtMatKhau.DefaultText = "";
             txtMatKhau.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtMatKhau.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -378,7 +315,7 @@
             txtMatKhau.PasswordChar = '\0';
             txtMatKhau.PlaceholderText = "";
             txtMatKhau.SelectedText = "";
-            txtMatKhau.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtMatKhau.ShadowDecoration.CustomizableEdges = customizableEdges16;
             txtMatKhau.Size = new Size(254, 49);
             txtMatKhau.TabIndex = 77;
             // 
@@ -396,7 +333,7 @@
             // txtEmail
             // 
             txtEmail.BorderRadius = 5;
-            txtEmail.CustomizableEdges = customizableEdges19;
+            txtEmail.CustomizableEdges = customizableEdges17;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -411,7 +348,7 @@
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
-            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges18;
             txtEmail.Size = new Size(287, 49);
             txtEmail.TabIndex = 78;
             // 
@@ -440,7 +377,7 @@
             // txtDiaChi
             // 
             txtDiaChi.BorderRadius = 5;
-            txtDiaChi.CustomizableEdges = customizableEdges21;
+            txtDiaChi.CustomizableEdges = customizableEdges19;
             txtDiaChi.DefaultText = "";
             txtDiaChi.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtDiaChi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -455,7 +392,7 @@
             txtDiaChi.PasswordChar = '\0';
             txtDiaChi.PlaceholderText = "";
             txtDiaChi.SelectedText = "";
-            txtDiaChi.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txtDiaChi.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtDiaChi.Size = new Size(283, 49);
             txtDiaChi.TabIndex = 79;
             // 
@@ -484,7 +421,7 @@
             // txtTenNhanVien
             // 
             txtTenNhanVien.BorderRadius = 5;
-            txtTenNhanVien.CustomizableEdges = customizableEdges23;
+            txtTenNhanVien.CustomizableEdges = customizableEdges21;
             txtTenNhanVien.DefaultText = "";
             txtTenNhanVien.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTenNhanVien.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -499,7 +436,7 @@
             txtTenNhanVien.PasswordChar = '\0';
             txtTenNhanVien.PlaceholderText = "";
             txtTenNhanVien.SelectedText = "";
-            txtTenNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtTenNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtTenNhanVien.Size = new Size(283, 49);
             txtTenNhanVien.TabIndex = 80;
             // 
@@ -517,7 +454,7 @@
             // txtMaNV
             // 
             txtMaNV.BorderRadius = 5;
-            txtMaNV.CustomizableEdges = customizableEdges25;
+            txtMaNV.CustomizableEdges = customizableEdges23;
             txtMaNV.DefaultText = "";
             txtMaNV.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtMaNV.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -534,7 +471,7 @@
             txtMaNV.PlaceholderText = "";
             txtMaNV.ReadOnly = true;
             txtMaNV.SelectedText = "";
-            txtMaNV.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            txtMaNV.ShadowDecoration.CustomizableEdges = customizableEdges24;
             txtMaNV.Size = new Size(283, 49);
             txtMaNV.TabIndex = 81;
             // 
@@ -548,6 +485,69 @@
             label1.Size = new Size(102, 20);
             label1.TabIndex = 70;
             label1.Text = "Mã Nhân Viên";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F);
+            label7.ForeColor = Color.FromArgb(64, 0, 0);
+            label7.Location = new Point(1199, 103);
+            label7.Name = "label7";
+            label7.Size = new Size(78, 20);
+            label7.TabIndex = 82;
+            label7.Text = "Trạng Thái";
+            // 
+            // rdoHoatDong
+            // 
+            rdoHoatDong.AutoSize = true;
+            rdoHoatDong.Checked = true;
+            rdoHoatDong.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            rdoHoatDong.CheckedState.BorderThickness = 0;
+            rdoHoatDong.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            rdoHoatDong.CheckedState.InnerColor = Color.White;
+            rdoHoatDong.CheckedState.InnerOffset = -4;
+            rdoHoatDong.ForeColor = Color.FromArgb(64, 0, 0);
+            rdoHoatDong.Location = new Point(3, 1);
+            rdoHoatDong.Name = "rdoHoatDong";
+            rdoHoatDong.Size = new Size(104, 24);
+            rdoHoatDong.TabIndex = 0;
+            rdoHoatDong.TabStop = true;
+            rdoHoatDong.Text = "Hoạt Động";
+            rdoHoatDong.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            rdoHoatDong.UncheckedState.BorderThickness = 2;
+            rdoHoatDong.UncheckedState.FillColor = Color.Transparent;
+            rdoHoatDong.UncheckedState.InnerColor = Color.Transparent;
+            // 
+            // rdoKhongHoatDong
+            // 
+            rdoKhongHoatDong.AutoSize = true;
+            rdoKhongHoatDong.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            rdoKhongHoatDong.CheckedState.BorderThickness = 0;
+            rdoKhongHoatDong.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            rdoKhongHoatDong.CheckedState.InnerColor = Color.White;
+            rdoKhongHoatDong.CheckedState.InnerOffset = -4;
+            rdoKhongHoatDong.ForeColor = Color.FromArgb(64, 0, 0);
+            rdoKhongHoatDong.Location = new Point(3, 59);
+            rdoKhongHoatDong.Name = "rdoKhongHoatDong";
+            rdoKhongHoatDong.Size = new Size(97, 24);
+            rdoKhongHoatDong.TabIndex = 1;
+            rdoKhongHoatDong.Text = "Tạm Khóa";
+            rdoKhongHoatDong.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            rdoKhongHoatDong.UncheckedState.BorderThickness = 2;
+            rdoKhongHoatDong.UncheckedState.FillColor = Color.Transparent;
+            rdoKhongHoatDong.UncheckedState.InnerColor = Color.Transparent;
+            // 
+            // guna2Panel2
+            // 
+            guna2Panel2.BorderThickness = 1;
+            guna2Panel2.Controls.Add(rdoKhongHoatDong);
+            guna2Panel2.Controls.Add(rdoHoatDong);
+            guna2Panel2.CustomizableEdges = customizableEdges25;
+            guna2Panel2.Location = new Point(1199, 132);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2Panel2.Size = new Size(118, 131);
+            guna2Panel2.TabIndex = 83;
             // 
             // frmNhanVien
             // 
@@ -601,10 +601,6 @@
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnThem;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2RadioButton rdoKhongHoatDong;
-        private Guna.UI2.WinForms.Guna2RadioButton rdoHoatDong;
-        private Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
         private Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
@@ -617,5 +613,9 @@
         private Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
         private Label label1;
+        private Label label7;
+        private Guna.UI2.WinForms.Guna2RadioButton rdoHoatDong;
+        private Guna.UI2.WinForms.Guna2RadioButton rdoKhongHoatDong;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

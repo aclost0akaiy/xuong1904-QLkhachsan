@@ -88,5 +88,25 @@ namespace GUI_QLKS
         {
             openChildForm(new frmDichVu());
         }
+
+        private void guna2GradientButton7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDatPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace GUI_QLKS
         {
             InitializeComponent();
         }
+
+        private void txtMaNV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,5 +45,15 @@ namespace GUI_QLKS
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabLoaiPhong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

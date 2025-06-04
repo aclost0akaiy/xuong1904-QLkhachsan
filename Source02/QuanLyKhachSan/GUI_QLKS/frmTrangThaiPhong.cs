@@ -16,5 +16,10 @@ namespace GUI_QLKS
         {
             InitializeComponent();
         }
+
+        private void frmTrangThaiPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

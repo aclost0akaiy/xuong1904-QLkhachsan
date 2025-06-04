@@ -16,5 +16,15 @@ namespace GUI_QLKS
         {
             InitializeComponent();
         }
+
+        private void frmLoaiDichVu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

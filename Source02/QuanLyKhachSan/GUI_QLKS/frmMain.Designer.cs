@@ -47,10 +47,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
@@ -80,7 +80,8 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.BackColor = Color.FromArgb(40, 42, 52);
+            guna2Panel1.BackColor = Color.Navy;
+            guna2Panel1.Controls.Add(btn_show);
             guna2Panel1.Controls.Add(guna2GradientButton7);
             guna2Panel1.Controls.Add(guna2Separator1);
             guna2Panel1.Controls.Add(btnDichVu);
@@ -96,7 +97,7 @@
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Panel1.Size = new Size(65, 904);
+            guna2Panel1.Size = new Size(65, 788);
             guna2Panel1.TabIndex = 0;
             // 
             // guna2GradientButton7
@@ -115,20 +116,20 @@
             guna2GradientButton7.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2GradientButton7.Image = (Image)resources.GetObject("guna2GradientButton7.Image");
             guna2GradientButton7.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton7.ImageSize = new Size(25, 25);
-            guna2GradientButton7.Location = new Point(8, 819);
+            guna2GradientButton7.ImageSize = new Size(50, 50);
+            guna2GradientButton7.Location = new Point(0, 12);
             guna2GradientButton7.Name = "guna2GradientButton7";
             guna2GradientButton7.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2GradientButton7.Size = new Size(180, 45);
+            guna2GradientButton7.Size = new Size(67, 66);
             guna2GradientButton7.TabIndex = 8;
-            guna2GradientButton7.Text = "Settings";
             guna2GradientButton7.UseTransparentBackground = true;
+            guna2GradientButton7.Click += guna2GradientButton7_Click;
             // 
             // guna2Separator1
             // 
             guna2Transition1.SetDecoration(guna2Separator1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Separator1.FillColor = Color.Gray;
-            guna2Separator1.Location = new Point(12, 467);
+            guna2Separator1.Location = new Point(12, 597);
             guna2Separator1.Name = "guna2Separator1";
             guna2Separator1.Size = new Size(200, 10);
             guna2Separator1.TabIndex = 7;
@@ -149,11 +150,11 @@
             btnDichVu.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDichVu.Image = (Image)resources.GetObject("btnDichVu.Image");
             btnDichVu.ImageAlign = HorizontalAlignment.Left;
-            btnDichVu.ImageSize = new Size(25, 25);
-            btnDichVu.Location = new Point(11, 385);
+            btnDichVu.ImageSize = new Size(100, 100);
+            btnDichVu.Location = new Point(-27, 529);
             btnDichVu.Name = "btnDichVu";
             btnDichVu.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnDichVu.Size = new Size(180, 45);
+            btnDichVu.Size = new Size(180, 48);
             btnDichVu.TabIndex = 6;
             btnDichVu.Text = "Dịch Vụ";
             btnDichVu.TextAlign = HorizontalAlignment.Left;
@@ -177,8 +178,8 @@
             btnQLDatPhong.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnQLDatPhong.Image = (Image)resources.GetObject("btnQLDatPhong.Image");
             btnQLDatPhong.ImageAlign = HorizontalAlignment.Left;
-            btnQLDatPhong.ImageSize = new Size(25, 25);
-            btnQLDatPhong.Location = new Point(11, 332);
+            btnQLDatPhong.ImageSize = new Size(100, 100);
+            btnQLDatPhong.Location = new Point(-27, 478);
             btnQLDatPhong.Name = "btnQLDatPhong";
             btnQLDatPhong.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnQLDatPhong.Size = new Size(180, 45);
@@ -205,11 +206,11 @@
             btnPhong.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPhong.Image = (Image)resources.GetObject("btnPhong.Image");
             btnPhong.ImageAlign = HorizontalAlignment.Left;
-            btnPhong.ImageSize = new Size(25, 25);
-            btnPhong.Location = new Point(11, 279);
+            btnPhong.ImageSize = new Size(100, 100);
+            btnPhong.Location = new Point(-30, 387);
             btnPhong.Name = "btnPhong";
             btnPhong.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnPhong.Size = new Size(180, 45);
+            btnPhong.Size = new Size(111, 65);
             btnPhong.TabIndex = 4;
             btnPhong.Text = "Phòng";
             btnPhong.TextAlign = HorizontalAlignment.Left;
@@ -233,11 +234,11 @@
             btnKhachHang.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnKhachHang.Image = (Image)resources.GetObject("btnKhachHang.Image");
             btnKhachHang.ImageAlign = HorizontalAlignment.Left;
-            btnKhachHang.ImageSize = new Size(25, 25);
-            btnKhachHang.Location = new Point(11, 226);
+            btnKhachHang.ImageSize = new Size(100, 100);
+            btnKhachHang.Location = new Point(-27, 321);
             btnKhachHang.Name = "btnKhachHang";
             btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnKhachHang.Size = new Size(180, 45);
+            btnKhachHang.Size = new Size(108, 45);
             btnKhachHang.TabIndex = 3;
             btnKhachHang.Text = "Khách Hàng";
             btnKhachHang.TextAlign = HorizontalAlignment.Left;
@@ -255,14 +256,14 @@
             btnNhanVien.FillColor = Color.Empty;
             btnNhanVien.FillColor2 = Color.Empty;
             btnNhanVien.Font = new Font("Segoe UI", 9F);
-            btnNhanVien.ForeColor = Color.White;
+            btnNhanVien.ForeColor = Color.Navy;
             btnNhanVien.HoverState.FillColor = Color.FromArgb(228, 62, 103);
             btnNhanVien.HoverState.FillColor2 = Color.FromArgb(40, 42, 52);
             btnNhanVien.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnNhanVien.Image = (Image)resources.GetObject("btnNhanVien.Image");
             btnNhanVien.ImageAlign = HorizontalAlignment.Left;
-            btnNhanVien.ImageSize = new Size(25, 25);
-            btnNhanVien.Location = new Point(11, 173);
+            btnNhanVien.ImageSize = new Size(100, 100);
+            btnNhanVien.Location = new Point(-27, 251);
             btnNhanVien.Name = "btnNhanVien";
             btnNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnNhanVien.Size = new Size(180, 45);
@@ -289,16 +290,17 @@
             btnDatPhong.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDatPhong.Image = (Image)resources.GetObject("btnDatPhong.Image");
             btnDatPhong.ImageAlign = HorizontalAlignment.Left;
-            btnDatPhong.ImageSize = new Size(25, 25);
-            btnDatPhong.Location = new Point(11, 120);
+            btnDatPhong.ImageSize = new Size(100, 100);
+            btnDatPhong.Location = new Point(-27, 182);
             btnDatPhong.Name = "btnDatPhong";
             btnDatPhong.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnDatPhong.Size = new Size(180, 45);
+            btnDatPhong.Size = new Size(111, 45);
             btnDatPhong.TabIndex = 1;
             btnDatPhong.Text = "Đặt Phòng";
             btnDatPhong.TextAlign = HorizontalAlignment.Left;
             btnDatPhong.TextOffset = new Point(50, 0);
             btnDatPhong.UseTransparentBackground = true;
+            btnDatPhong.Click += btnDatPhong_Click;
             // 
             // guna2PictureBox1
             // 
@@ -307,25 +309,26 @@
             guna2Transition1.SetDecoration(guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(12, 31);
+            guna2PictureBox1.Location = new Point(-58, 106);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2PictureBox1.Size = new Size(180, 52);
+            guna2PictureBox1.Size = new Size(180, 40);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2PictureBox1.TabIndex = 0;
             guna2PictureBox1.TabStop = false;
             guna2PictureBox1.UseTransparentBackground = true;
+            guna2PictureBox1.Click += guna2PictureBox1_Click;
             // 
             // guna2ControlBox1
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2ControlBox1.CustomizableEdges = customizableEdges3;
+            guna2ControlBox1.CustomizableEdges = customizableEdges2;
             guna2Transition1.SetDecoration(guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2ControlBox1.FillColor = Color.Transparent;
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(1414, 12);
             guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2ControlBox1.Size = new Size(31, 29);
             guna2ControlBox1.TabIndex = 1;
             // 
@@ -349,7 +352,7 @@
             btn_hide.ImageAlign = HorizontalAlignment.Left;
             btn_hide.Location = new Point(218, 450);
             btn_hide.Name = "btn_hide";
-            btn_hide.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_hide.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btn_hide.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             btn_hide.Size = new Size(40, 40);
             btn_hide.TabIndex = 2;
@@ -368,9 +371,9 @@
             btn_show.ForeColor = Color.White;
             btn_show.Image = (Image)resources.GetObject("btn_show.Image");
             btn_show.ImageAlign = HorizontalAlignment.Left;
-            btn_show.Location = new Point(37, 450);
+            btn_show.Location = new Point(27, 432);
             btn_show.Name = "btn_show";
-            btn_show.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            btn_show.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btn_show.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             btn_show.Size = new Size(40, 40);
             btn_show.TabIndex = 5;
@@ -400,28 +403,29 @@
             // 
             // pnMain
             // 
+            pnMain.BackColor = Color.FromArgb(224, 224, 224);
             guna2Transition1.SetDecoration(pnMain, Guna.UI2.AnimatorNS.DecorationType.None);
             pnMain.Dock = DockStyle.Fill;
             pnMain.Location = new Point(65, 0);
             pnMain.Name = "pnMain";
-            pnMain.Size = new Size(1401, 904);
+            pnMain.Size = new Size(1321, 788);
             pnMain.TabIndex = 6;
             pnMain.Paint += pnMain_Paint;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(60, 63, 81);
-            ClientSize = new Size(1466, 904);
+            ClientSize = new Size(1386, 788);
             Controls.Add(pnMain);
-            Controls.Add(btn_show);
             Controls.Add(btn_hide);
             Controls.Add(guna2ControlBox1);
             Controls.Add(guna2Panel1);
             guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "x";

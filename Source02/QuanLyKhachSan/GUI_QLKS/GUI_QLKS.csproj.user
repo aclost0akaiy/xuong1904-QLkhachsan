@@ -40,5 +40,8 @@
     <Compile Update="frmTrangThaiPhong.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ListKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
