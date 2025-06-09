@@ -119,7 +119,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1383, 69);
+            panel1.Size = new Size(1324, 69);
             panel1.TabIndex = 1;
             // 
             // lbChucNangText
@@ -144,7 +144,7 @@
             guna2TabControl1.Margin = new Padding(3, 4, 3, 4);
             guna2TabControl1.Name = "guna2TabControl1";
             guna2TabControl1.SelectedIndex = 0;
-            guna2TabControl1.Size = new Size(1383, 788);
+            guna2TabControl1.Size = new Size(1324, 787);
             guna2TabControl1.TabButtonHoverState.BorderColor = Color.Empty;
             guna2TabControl1.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
             guna2TabControl1.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F);
@@ -164,6 +164,7 @@
             guna2TabControl1.TabIndex = 8;
             guna2TabControl1.TabMenuBackColor = Color.FromArgb(33, 42, 57);
             guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            guna2TabControl1.SelectedIndexChanged += guna2TabControl1_SelectedIndexChanged;
             // 
             // tabDatPhong
             // 
@@ -174,7 +175,7 @@
             tabDatPhong.Margin = new Padding(3, 4, 3, 4);
             tabDatPhong.Name = "tabDatPhong";
             tabDatPhong.Padding = new Padding(3, 4, 3, 4);
-            tabDatPhong.Size = new Size(1375, 740);
+            tabDatPhong.Size = new Size(1316, 739);
             tabDatPhong.TabIndex = 0;
             tabDatPhong.Text = "Đặt Phòng";
             tabDatPhong.UseVisualStyleBackColor = true;
@@ -200,7 +201,7 @@
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2GroupBox1.Size = new Size(1372, 157);
             guna2GroupBox1.TabIndex = 9;
-            guna2GroupBox1.Text = "guna2GroupBox1";
+            guna2GroupBox1.Text = "Thông Tin Khách Hàng";
             // 
             // guna2ComboBox1
             // 
@@ -376,11 +377,11 @@
             guna2GroupBox3.CustomizableEdges = customizableEdges19;
             guna2GroupBox3.Font = new Font("Segoe UI", 9F);
             guna2GroupBox3.ForeColor = Color.FromArgb(125, 137, 149);
-            guna2GroupBox3.Location = new Point(856, 156);
+            guna2GroupBox3.Location = new Point(829, 157);
             guna2GroupBox3.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox3.Name = "guna2GroupBox3";
             guna2GroupBox3.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2GroupBox3.Size = new Size(511, 588);
+            guna2GroupBox3.Size = new Size(491, 588);
             guna2GroupBox3.TabIndex = 8;
             guna2GroupBox3.Text = "Thông Tin Đặt Phòng";
             // 
@@ -397,7 +398,7 @@
             guna2Button3.Margin = new Padding(3, 4, 3, 4);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button3.Size = new Size(234, 44);
+            guna2Button3.Size = new Size(219, 44);
             guna2Button3.TabIndex = 12;
             guna2Button3.Text = "Thêm Dịch Vụ";
             // 
@@ -439,7 +440,7 @@
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
             guna2DataGridView1.RowTemplate.Height = 25;
-            guna2DataGridView1.Size = new Size(496, 217);
+            guna2DataGridView1.Size = new Size(463, 217);
             guna2DataGridView1.TabIndex = 11;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -548,7 +549,7 @@
             dgrPhongDaChon.RowHeadersVisible = false;
             dgrPhongDaChon.RowHeadersWidth = 51;
             dgrPhongDaChon.RowTemplate.Height = 25;
-            dgrPhongDaChon.Size = new Size(496, 181);
+            dgrPhongDaChon.Size = new Size(467, 181);
             dgrPhongDaChon.TabIndex = 8;
             dgrPhongDaChon.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgrPhongDaChon.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -599,7 +600,7 @@
             guna2GroupBox2.Margin = new Padding(3, 4, 3, 4);
             guna2GroupBox2.Name = "guna2GroupBox2";
             guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2GroupBox2.Size = new Size(853, 579);
+            guna2GroupBox2.Size = new Size(826, 579);
             guna2GroupBox2.TabIndex = 7;
             guna2GroupBox2.Text = "Thông Tin Đăng Ký";
             // 
@@ -641,7 +642,7 @@
             dgrDanhSachPhong.RowHeadersVisible = false;
             dgrDanhSachPhong.RowHeadersWidth = 51;
             dgrDanhSachPhong.RowTemplate.Height = 25;
-            dgrDanhSachPhong.Size = new Size(825, 406);
+            dgrDanhSachPhong.Size = new Size(786, 406);
             dgrDanhSachPhong.TabIndex = 6;
             dgrDanhSachPhong.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgrDanhSachPhong.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -763,7 +764,7 @@
             tabQuanLyDatPhong.Margin = new Padding(3, 4, 3, 4);
             tabQuanLyDatPhong.Name = "tabQuanLyDatPhong";
             tabQuanLyDatPhong.Padding = new Padding(3, 4, 3, 4);
-            tabQuanLyDatPhong.Size = new Size(1375, 740);
+            tabQuanLyDatPhong.Size = new Size(1316, 739);
             tabQuanLyDatPhong.TabIndex = 1;
             tabQuanLyDatPhong.Text = "Danh Sách Đặt Phòng";
             tabQuanLyDatPhong.UseVisualStyleBackColor = true;
@@ -773,7 +774,7 @@
             tabDatDichVu.Location = new Point(4, 44);
             tabDatDichVu.Margin = new Padding(3, 4, 3, 4);
             tabDatDichVu.Name = "tabDatDichVu";
-            tabDatDichVu.Size = new Size(1375, 740);
+            tabDatDichVu.Size = new Size(1316, 739);
             tabDatDichVu.TabIndex = 2;
             tabDatDichVu.Text = "Danh Sách Dịch Vụ";
             tabDatDichVu.UseVisualStyleBackColor = true;
@@ -782,7 +783,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1383, 857);
+            ClientSize = new Size(1324, 856);
             Controls.Add(guna2TabControl1);
             Controls.Add(panel1);
             Name = "frmDatPhong";

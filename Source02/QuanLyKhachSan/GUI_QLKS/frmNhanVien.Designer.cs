@@ -96,7 +96,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1383, 69);
+            panel1.Size = new Size(1324, 69);
             panel1.TabIndex = 1;
             // 
             // lbChucNangText
@@ -175,7 +175,7 @@
             dgvNhanVien.Name = "dgvNhanVien";
             dgvNhanVien.RowHeadersVisible = false;
             dgvNhanVien.RowHeadersWidth = 51;
-            dgvNhanVien.Size = new Size(1359, 478);
+            dgvNhanVien.Size = new Size(1300, 477);
             dgvNhanVien.TabIndex = 89;
             dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvNhanVien.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -215,7 +215,7 @@
             txtTimKiem.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimKiem.IconLeftSize = new Size(40, 40);
             txtTimKiem.IconRight = (Image)resources.GetObject("txtTimKiem.IconRight");
-            txtTimKiem.Location = new Point(967, 288);
+            txtTimKiem.Location = new Point(908, 288);
             txtTimKiem.Margin = new Padding(3, 5, 3, 5);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PasswordChar = '\0';
@@ -553,7 +553,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1383, 857);
+            ClientSize = new Size(1324, 856);
             Controls.Add(cboVaiTro);
             Controls.Add(cboGioiTinh);
             Controls.Add(dgvNhanVien);

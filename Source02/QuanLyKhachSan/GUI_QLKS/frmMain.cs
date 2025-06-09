@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,76 +38,50 @@ namespace GUI_QLKS
 
         }
 
-        private void btn_show_Click(object sender, EventArgs e)
-        {
-            //guna2PictureBox1.Visible = true;
-            btn_show.Visible = false;
-            btn_hide.Visible = true;
-            guna2Panel1.Visible = false;
-            guna2Panel1.Width = 237;
-            guna2Transition1.ShowSync(guna2Panel1);
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmTrangChu());
         }
 
-        private void btn_hide_Click(object sender, EventArgs e)
-        {
-            //guna2PictureBox1.Visible = false;
-            guna2Panel1.Visible = false;
-            btn_hide.Visible = false;
-            btn_show.Visible = true;
-            guna2Panel1.Width = 47;
-            guna2Transition1.ShowSync(guna2Panel1);
-        }
-
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-
-            openChildForm(new frmNhanVien());
-        }
-
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frmKhachHang());
-        }
-
-        private void btnPhong_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frmPhong());
-        }
-
-        private void btnQLDatPhong_Click(object sender, EventArgs e)
+        private void btnBooking_Click(object sender, EventArgs e)
         {
             openChildForm(new frmDatPhong());
         }
 
-        private void pnMain_Paint(object sender, PaintEventArgs e)
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new frmKhachHang());
         }
 
-        private void btnDichVu_Click(object sender, EventArgs e)
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmNhanVien());
+        }
+
+        private void btnRoom_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmPhong());
+        }
+
+        private void btnService_Click(object sender, EventArgs e)
         {
             openChildForm(new frmDichVu());
         }
 
-        private void guna2GradientButton7_Click(object sender, EventArgs e)
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDatPhong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

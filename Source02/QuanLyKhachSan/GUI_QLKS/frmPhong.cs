@@ -38,6 +38,18 @@ namespace GUI_QLKS
                     frm.Show();
                     return;
                 }
+                if (guna2TabControl1.SelectedTab.Name == "tabTrangThaiPhong")
+                {
+                    TabPage tab = guna2TabControl1.SelectedTab;
+                    frmTrangThaiPhong frm = new frmTrangThaiPhong();
+                    frm.TopLevel = false;
+                    frm.FormBorderStyle = FormBorderStyle.None;
+                    frm.Dock = DockStyle.Fill;
+
+                    tab.Controls.Add(frm);
+                    frm.Show();
+                    return;
+                }
             }
         }
 
