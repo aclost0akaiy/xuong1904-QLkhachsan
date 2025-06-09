@@ -64,8 +64,11 @@
             btnBooking = new Guna.UI2.WinForms.Guna2GradientButton();
             btnHome = new Guna.UI2.WinForms.Guna2GradientButton();
             pnMain = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox2 = new PictureBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel1
@@ -362,6 +365,7 @@
             // pnMain
             // 
             pnMain.BackColor = Color.FromArgb(228, 203, 182);
+            pnMain.Controls.Add(pictureBox2);
             pnMain.CustomizableEdges = customizableEdges21;
             pnMain.Dock = DockStyle.Fill;
             pnMain.Location = new Point(226, 0);
@@ -369,6 +373,16 @@
             pnMain.ShadowDecoration.CustomizableEdges = customizableEdges22;
             pnMain.Size = new Size(1342, 903);
             pnMain.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(114, 139);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1072, 678);
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // frmMain
             // 
@@ -382,6 +396,8 @@
             Text = "frmMainHome";
             guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -400,5 +416,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnBooking;
         private Guna.UI2.WinForms.Guna2GradientButton btnHome;
         private Guna.UI2.WinForms.Guna2Panel pnMain;
+        private PictureBox pictureBox2;
     }
 }

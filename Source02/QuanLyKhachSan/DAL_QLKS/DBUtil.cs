@@ -7,7 +7,7 @@ namespace DAL_QLKS
 {
     public class DBUtil
     {
-        public static string connString = @"Data Source=DEIMOS\SQLEXPRESS;Initial Catalog=Xuong_QuanLyKhachSan;Integrated Security=True;Trust Server Certificate=True";
+        public static string connString = @"Data Source=PCKIET\SQLEXPRESS;Initial Catalog=Xuong_KhachSanKhungBo;Integrated Security=True;Trust Server Certificate=True";
     
         public static SqlCommand GetCommand(string sql, List<object> args, CommandType cmdType)
         {

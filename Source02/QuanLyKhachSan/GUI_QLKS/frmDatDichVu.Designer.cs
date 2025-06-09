@@ -339,6 +339,7 @@
             btnThem.Size = new Size(160, 51);
             btnThem.TabIndex = 136;
             btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click;
             // 
             // guna2Panel2
             // 
