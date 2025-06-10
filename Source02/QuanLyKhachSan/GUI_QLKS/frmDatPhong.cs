@@ -47,5 +47,10 @@ namespace GUI_QLKS
                 }
             }
         }
+
+        private void frmDatPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

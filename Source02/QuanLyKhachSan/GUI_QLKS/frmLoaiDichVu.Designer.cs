@@ -275,6 +275,7 @@
             btnThem.Size = new Size(160, 51);
             btnThem.TabIndex = 130;
             btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click;
             // 
             // btnXoa
             // 

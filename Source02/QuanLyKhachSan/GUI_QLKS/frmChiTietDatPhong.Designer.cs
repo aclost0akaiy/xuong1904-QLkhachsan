@@ -90,7 +90,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F);
             label12.ForeColor = Color.FromArgb(64, 0, 0);
-            label12.Location = new Point(958, 470);
+            label12.Location = new Point(956, 107);
             label12.Name = "label12";
             label12.Size = new Size(77, 20);
             label12.TabIndex = 178;
@@ -108,7 +108,7 @@
             txtMaPhong.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaPhong.Font = new Font("Segoe UI", 9F);
             txtMaPhong.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaPhong.Location = new Point(958, 496);
+            txtMaPhong.Location = new Point(956, 133);
             txtMaPhong.Margin = new Padding(3, 5, 3, 5);
             txtMaPhong.Name = "txtMaPhong";
             txtMaPhong.PasswordChar = '\0';
@@ -123,7 +123,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F);
             label11.ForeColor = Color.FromArgb(64, 0, 0);
-            label11.Location = new Point(958, 376);
+            label11.Location = new Point(956, 13);
             label11.Name = "label11";
             label11.Size = new Size(84, 20);
             label11.TabIndex = 176;
@@ -141,7 +141,7 @@
             txtLoaiPhong.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtLoaiPhong.Font = new Font("Segoe UI", 9F);
             txtLoaiPhong.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLoaiPhong.Location = new Point(958, 401);
+            txtLoaiPhong.Location = new Point(956, 38);
             txtLoaiPhong.Margin = new Padding(3, 5, 3, 5);
             txtLoaiPhong.Name = "txtLoaiPhong";
             txtLoaiPhong.PasswordChar = '\0';
@@ -156,7 +156,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F);
             label6.ForeColor = Color.FromArgb(64, 0, 0);
-            label6.Location = new Point(676, 377);
+            label6.Location = new Point(674, 14);
             label6.Name = "label6";
             label6.Size = new Size(61, 20);
             label6.TabIndex = 170;
@@ -174,7 +174,7 @@
             txtNgayDi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNgayDi.Font = new Font("Segoe UI", 9F);
             txtNgayDi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNgayDi.Location = new Point(681, 401);
+            txtNgayDi.Location = new Point(679, 38);
             txtNgayDi.Margin = new Padding(3, 5, 3, 5);
             txtNgayDi.Name = "txtNgayDi";
             txtNgayDi.PasswordChar = '\0';
@@ -196,7 +196,7 @@
             txtNgayDen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNgayDen.Font = new Font("Segoe UI", 9F);
             txtNgayDen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNgayDen.Location = new Point(349, 401);
+            txtNgayDen.Location = new Point(347, 38);
             txtNgayDen.Margin = new Padding(3, 5, 3, 5);
             txtNgayDen.Name = "txtNgayDen";
             txtNgayDen.PasswordChar = '\0';
@@ -211,7 +211,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F);
             label9.ForeColor = Color.FromArgb(64, 0, 0);
-            label9.Location = new Point(346, 377);
+            label9.Location = new Point(344, 14);
             label9.Name = "label9";
             label9.Size = new Size(77, 20);
             label9.TabIndex = 171;
@@ -229,7 +229,7 @@
             txtphongID.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtphongID.Font = new Font("Segoe UI", 9F);
             txtphongID.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtphongID.Location = new Point(26, 401);
+            txtphongID.Location = new Point(24, 38);
             txtphongID.Margin = new Padding(3, 5, 3, 5);
             txtphongID.Name = "txtphongID";
             txtphongID.PasswordChar = '\0';
@@ -244,7 +244,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F);
             label10.ForeColor = Color.FromArgb(64, 0, 0);
-            label10.Location = new Point(21, 377);
+            label10.Location = new Point(19, 14);
             label10.Name = "label10";
             label10.Size = new Size(70, 20);
             label10.TabIndex = 172;
@@ -256,7 +256,7 @@
             guna2Panel2.Controls.Add(rdoKhongHoatDong);
             guna2Panel2.Controls.Add(rdoHoatDong);
             guna2Panel2.CustomizableEdges = customizableEdges11;
-            guna2Panel2.Location = new Point(1231, 476);
+            guna2Panel2.Location = new Point(1229, 113);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Panel2.Size = new Size(118, 131);
@@ -307,7 +307,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F);
             label5.ForeColor = Color.FromArgb(64, 0, 0);
-            label5.Location = new Point(676, 550);
+            label5.Location = new Point(674, 187);
             label5.Name = "label5";
             label5.Size = new Size(47, 20);
             label5.TabIndex = 155;
@@ -318,7 +318,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F);
             label7.ForeColor = Color.FromArgb(64, 0, 0);
-            label7.Location = new Point(1231, 445);
+            label7.Location = new Point(1229, 82);
             label7.Name = "label7";
             label7.Size = new Size(78, 20);
             label7.TabIndex = 166;
@@ -336,7 +336,7 @@
             txtCCCD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCCCD.Font = new Font("Segoe UI", 9F);
             txtCCCD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCCCD.Location = new Point(681, 574);
+            txtCCCD.Location = new Point(679, 211);
             txtCCCD.Margin = new Padding(3, 5, 3, 5);
             txtCCCD.Name = "txtCCCD";
             txtCCCD.PasswordChar = '\0';
@@ -358,7 +358,7 @@
             cboVaiTro.ForeColor = Color.FromArgb(68, 88, 112);
             cboVaiTro.ItemHeight = 30;
             cboVaiTro.Items.AddRange(new object[] { "Nhân Viên", "Quản Lý" });
-            cboVaiTro.Location = new Point(954, 573);
+            cboVaiTro.Location = new Point(952, 210);
             cboVaiTro.Name = "cboVaiTro";
             cboVaiTro.ShadowDecoration.CustomizableEdges = customizableEdges16;
             cboVaiTro.Size = new Size(258, 36);
@@ -376,7 +376,7 @@
             cboGioiTinh.ForeColor = Color.FromArgb(68, 88, 112);
             cboGioiTinh.ItemHeight = 30;
             cboGioiTinh.Items.AddRange(new object[] { "Nam", "Nữ", "Khác" });
-            cboGioiTinh.Location = new Point(683, 493);
+            cboGioiTinh.Location = new Point(681, 130);
             cboGioiTinh.Name = "cboGioiTinh";
             cboGioiTinh.ShadowDecoration.CustomizableEdges = customizableEdges18;
             cboGioiTinh.Size = new Size(254, 36);
@@ -394,7 +394,7 @@
             txtSDT.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSDT.Font = new Font("Segoe UI", 9F);
             txtSDT.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSDT.Location = new Point(349, 574);
+            txtSDT.Location = new Point(347, 211);
             txtSDT.Margin = new Padding(3, 5, 3, 5);
             txtSDT.Name = "txtSDT";
             txtSDT.PasswordChar = '\0';
@@ -409,7 +409,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F);
             label4.ForeColor = Color.FromArgb(64, 0, 0);
-            label4.Location = new Point(346, 550);
+            label4.Location = new Point(344, 187);
             label4.Name = "label4";
             label4.Size = new Size(35, 20);
             label4.TabIndex = 156;
@@ -420,7 +420,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F);
             label3.ForeColor = Color.FromArgb(64, 0, 0);
-            label3.Location = new Point(954, 550);
+            label3.Location = new Point(952, 187);
             label3.Name = "label3";
             label3.Size = new Size(54, 20);
             label3.TabIndex = 159;
@@ -438,7 +438,7 @@
             txtDiaChi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDiaChi.Font = new Font("Segoe UI", 9F);
             txtDiaChi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDiaChi.Location = new Point(351, 492);
+            txtDiaChi.Location = new Point(349, 129);
             txtDiaChi.Margin = new Padding(3, 5, 3, 5);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.PasswordChar = '\0';
@@ -453,7 +453,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F);
             label8.ForeColor = Color.FromArgb(64, 0, 0);
-            label8.Location = new Point(681, 464);
+            label8.Location = new Point(679, 101);
             label8.Name = "label8";
             label8.Size = new Size(68, 20);
             label8.TabIndex = 158;
@@ -464,7 +464,7 @@
             label111.AutoSize = true;
             label111.Font = new Font("Segoe UI", 9F);
             label111.ForeColor = Color.FromArgb(64, 0, 0);
-            label111.Location = new Point(348, 468);
+            label111.Location = new Point(346, 105);
             label111.Name = "label111";
             label111.Size = new Size(57, 20);
             label111.TabIndex = 157;
@@ -482,7 +482,7 @@
             txtTenKhachhang.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenKhachhang.Font = new Font("Segoe UI", 9F);
             txtTenKhachhang.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKhachhang.Location = new Point(26, 574);
+            txtTenKhachhang.Location = new Point(24, 211);
             txtTenKhachhang.Margin = new Padding(3, 5, 3, 5);
             txtTenKhachhang.Name = "txtTenKhachhang";
             txtTenKhachhang.PasswordChar = '\0';
@@ -497,7 +497,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F);
             label2.ForeColor = Color.FromArgb(64, 0, 0);
-            label2.Location = new Point(21, 550);
+            label2.Location = new Point(19, 187);
             label2.Name = "label2";
             label2.Size = new Size(113, 20);
             label2.TabIndex = 160;
@@ -516,7 +516,7 @@
             txtIDKhachHng.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtIDKhachHng.Font = new Font("Segoe UI", 9F);
             txtIDKhachHng.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtIDKhachHng.Location = new Point(26, 493);
+            txtIDKhachHng.Location = new Point(24, 130);
             txtIDKhachHng.Margin = new Padding(3, 5, 3, 5);
             txtIDKhachHng.Name = "txtIDKhachHng";
             txtIDKhachHng.PasswordChar = '\0';
@@ -532,7 +532,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F);
             label1.ForeColor = Color.FromArgb(64, 0, 0);
-            label1.Location = new Point(23, 469);
+            label1.Location = new Point(21, 106);
             label1.Name = "label1";
             label1.Size = new Size(100, 20);
             label1.TabIndex = 154;
@@ -571,6 +571,7 @@
             Controls.Add(label1);
             Name = "frmChiTietDatPhong";
             Text = "frmChiTietDatPhong";
+            Load += frmChiTietDatPhong_Load;
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();
             ResumeLayout(false);

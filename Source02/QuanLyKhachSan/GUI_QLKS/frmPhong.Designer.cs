@@ -87,8 +87,8 @@
             txtGiaPhong = new Guna.UI2.WinForms.Guna2TextBox();
             label5 = new Label();
             tabLoaiPhong = new TabPage();
-            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             tabTrangThaiPhong = new TabPage();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             panel1.SuspendLayout();
             guna2TabControl1.SuspendLayout();
             tabPhong.SuspendLayout();
@@ -625,11 +625,6 @@
             tabLoaiPhong.Text = "Loại Phòng";
             tabLoaiPhong.Click += tabLoaiPhong_Click;
             // 
-            // sqlCommand1
-            // 
-            sqlCommand1.CommandTimeout = 30;
-            sqlCommand1.EnableOptimizedParameterBinding = false;
-            // 
             // tabTrangThaiPhong
             // 
             tabTrangThaiPhong.Location = new Point(4, 44);
@@ -638,6 +633,11 @@
             tabTrangThaiPhong.TabIndex = 2;
             tabTrangThaiPhong.Text = "Trạng Thái Phòng";
             tabTrangThaiPhong.UseVisualStyleBackColor = true;
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // frmPhong
             // 

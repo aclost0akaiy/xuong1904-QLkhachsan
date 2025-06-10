@@ -77,6 +77,7 @@
             btnThem.Size = new Size(140, 51);
             btnThem.TabIndex = 116;
             btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click_1;
             // 
             // btnXoa
             // 
@@ -94,6 +95,7 @@
             btnXoa.Size = new Size(140, 51);
             btnXoa.TabIndex = 117;
             btnXoa.Text = "Xóa";
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -111,6 +113,7 @@
             btnSua.Size = new Size(140, 51);
             btnSua.TabIndex = 118;
             btnSua.Text = "Sửa";
+            btnSua.Click += btnSua_Click_1;
             // 
             // btnLamMoi
             // 

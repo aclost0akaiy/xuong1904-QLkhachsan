@@ -29,7 +29,7 @@ namespace GUI_QLKS
         {
             string username = txtEmail.Text;
             string password = txtPassword.Text;
-            NhanVien nv = busNhanVien.DangNhap("nam.nguyen@hotel.com", "abc123");
+            NhanVien nv = busNhanVien.DangNhap("nam.nguyen@hotel.com", "password123");
             //NhanVien nv = BUSNhanVien.DangNhap("hung.pham@gmail.vn", "hashed_hung789");
             //NhanVien nv = BUSNhanVien.DangNhap(username, password);
             if (nv == null)
@@ -52,7 +52,22 @@ namespace GUI_QLKS
 
         private void btnTThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Bạn muốn thoát không?", "Thoát",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+               );
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

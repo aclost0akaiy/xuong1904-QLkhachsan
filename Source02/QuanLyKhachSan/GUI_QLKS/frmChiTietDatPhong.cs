@@ -16,5 +16,10 @@ namespace GUI_QLKS
         {
             InitializeComponent();
         }
+
+        private void frmChiTietDatPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

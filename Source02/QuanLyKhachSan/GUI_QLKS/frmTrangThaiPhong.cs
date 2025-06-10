@@ -26,6 +26,10 @@ namespace GUI_QLKS
             ClearForm();
         }
 
+        private void LoadDanhSachTrangThaiPhong()
+        {
+        }
+
         private void LoadTrangThaiPhong()
         {
             dgvTrangThaiPhong.DataSource = null;
@@ -46,22 +50,17 @@ namespace GUI_QLKS
             txtTenTrangThai.Clear();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnSua_Click_1(object sender, EventArgs e)
         {
 
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLamMoi_Click(object sender, EventArgs e)
         {
 
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -101,6 +102,7 @@
             label7 = new Label();
             tabQuanLyDatPhong = new TabPage();
             tabDatDichVu = new TabPage();
+            guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
             panel1.SuspendLayout();
             guna2TabControl1.SuspendLayout();
             tabDatPhong.SuspendLayout();
@@ -788,6 +790,7 @@
             Controls.Add(panel1);
             Name = "frmDatPhong";
             Text = "frmDatPhong";
+            Load += frmDatPhong_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             guna2TabControl1.ResumeLayout(false);
@@ -839,5 +842,6 @@
         private Label label7;
         private TabPage tabQuanLyDatPhong;
         private TabPage tabDatDichVu;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
