@@ -40,7 +40,7 @@
     <Compile Update="frmPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmTrangChu.cs">
+    <Compile Update="frmWelcome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmTrangThaiPhong.cs">

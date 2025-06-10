@@ -12,6 +12,7 @@ namespace DTO_QLKS
         public string HoaDonThueID { get; set; }
         public DateTime NgayTao { get; set; }
         public bool TrangThai { get; set; }
+        public string TrangThaiText => TrangThai ? "Hoạt động" : "Ngừng hoạt động";
         public string GhiChu { get; set; }
  
 

@@ -230,9 +230,9 @@
             rdoKhongHoatDong.ForeColor = Color.FromArgb(64, 0, 0);
             rdoKhongHoatDong.Location = new Point(19, 70);
             rdoKhongHoatDong.Name = "rdoKhongHoatDong";
-            rdoKhongHoatDong.Size = new Size(97, 24);
+            rdoKhongHoatDong.Size = new Size(106, 24);
             rdoKhongHoatDong.TabIndex = 1;
-            rdoKhongHoatDong.Text = "Tạm Khóa";
+            rdoKhongHoatDong.Text = "Tạm ngưng";
             rdoKhongHoatDong.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             rdoKhongHoatDong.UncheckedState.BorderThickness = 2;
             rdoKhongHoatDong.UncheckedState.FillColor = Color.Transparent;

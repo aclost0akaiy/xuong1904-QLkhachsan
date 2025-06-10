@@ -20,15 +20,16 @@ namespace DAL_QLKS
                 while (reader.Read())
                 {
                     KhachHang entity = new KhachHang();
-                    entity.KhachHangID = reader.GetString("KhachHangID");  
-                    entity.HoTen = reader.GetString("HoTen");       
-                    entity.DiaChi = reader.GetString("DiaChi");       
-                    entity.GioiTinh = reader.GetString("GioiTinh");     
-                    entity.SoDienThoai = reader.GetString("SoDienThoai");  
-                    entity.CCCD = reader.GetString("CCCD");
-                    entity.NgayTao = reader.GetDateTime("NgayTao");
-                    entity.TrangThai = reader.GetBoolean("TrangThai");
-                    entity.GhiChu = reader.GetString("GhiChu");
+                    entity.KhachHangID = reader.GetString(reader.GetOrdinal("KhachHangID"));
+                    entity.HoTen = reader.GetString(reader.GetOrdinal("HoTen"));
+                    entity.DiaChi = reader.GetString(reader.GetOrdinal("DiaChi"));
+                    entity.GioiTinh = reader.GetString(reader.GetOrdinal("GioiTinh"));
+                    entity.SoDienThoai = reader.IsDBNull(reader.GetOrdinal("SoDienThoai")) ? null : reader.GetString(reader.GetOrdinal("SoDienThoai"));
+                    entity.CCCD = reader.IsDBNull(reader.GetOrdinal("CCCD")) ? null : reader.GetString(reader.GetOrdinal("CCCD"));
+                    entity.NgayTao = (DateTime)(reader.IsDBNull(reader.GetOrdinal("NgayTao")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("NgayTao")));
+                    entity.TrangThai = reader.IsDBNull(reader.GetOrdinal("TrangThai")) ? false : reader.GetBoolean(reader.GetOrdinal("TrangThai"));
+                    int ghiChuIndex = reader.GetOrdinal("GhiChu");
+                    entity.GhiChu = reader.IsDBNull(ghiChuIndex) ? null : reader.GetString(ghiChuIndex);
                     list.Add(entity);
                 }
             }
