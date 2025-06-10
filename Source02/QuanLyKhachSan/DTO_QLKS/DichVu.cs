@@ -10,11 +10,9 @@ namespace DTO_QLKS
     {
         public string DichVuID { get; set; }
         public string HoaDonThueID { get; set; }
-        public DateTime NgayTao { get; set; }
-        public bool TrangThai { get; set; }
+        public DateTime NgayTao { get; set; } = DateTime.Now; // Giá trị mặc định
+        public bool TrangThai { get; set; } = true; // Giá trị mặc định là true
         public string TrangThaiText => TrangThai ? "Hoạt động" : "Ngừng hoạt động";
         public string GhiChu { get; set; }
- 
-
     }
 }

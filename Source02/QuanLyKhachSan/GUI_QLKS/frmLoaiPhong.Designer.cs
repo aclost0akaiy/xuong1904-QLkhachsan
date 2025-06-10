@@ -52,7 +52,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            dgvNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
+            dgvLoaiPhong = new Guna.UI2.WinForms.Guna2DataGridView();
             panel2 = new Panel();
             NgayTao = new Guna.UI2.WinForms.Guna2DateTimePicker();
             label4 = new Label();
@@ -71,15 +71,15 @@
             label111 = new Label();
             txtMaLoaiPhong = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvLoaiPhong).BeginInit();
             panel2.SuspendLayout();
             guna2Panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // dgvNhanVien
+            // dgvLoaiPhong
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
-            dgvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvLoaiPhong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -87,9 +87,9 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvNhanVien.ColumnHeadersHeight = 50;
-            dgvNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvLoaiPhong.ColumnHeadersHeight = 50;
+            dgvLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -97,37 +97,36 @@
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgvNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvNhanVien.Dock = DockStyle.Fill;
-            dgvNhanVien.GridColor = Color.FromArgb(231, 229, 255);
-            dgvNhanVien.Location = new Point(0, 0);
-            dgvNhanVien.MultiSelect = false;
-            dgvNhanVien.Name = "dgvNhanVien";
-            dgvNhanVien.RowHeadersVisible = false;
-            dgvNhanVien.RowHeadersWidth = 51;
-            dgvNhanVien.Size = new Size(1324, 856);
-            dgvNhanVien.TabIndex = 111;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.Font = null;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgvNhanVien.ThemeStyle.BackColor = Color.White;
-            dgvNhanVien.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            dgvNhanVien.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            dgvNhanVien.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgvNhanVien.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            dgvNhanVien.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            dgvNhanVien.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dgvNhanVien.ThemeStyle.HeaderStyle.Height = 50;
-            dgvNhanVien.ThemeStyle.ReadOnly = false;
-            dgvNhanVien.ThemeStyle.RowsStyle.BackColor = Color.White;
-            dgvNhanVien.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvNhanVien.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            dgvNhanVien.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            dgvNhanVien.ThemeStyle.RowsStyle.Height = 29;
-            dgvNhanVien.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dgvNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvLoaiPhong.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvLoaiPhong.GridColor = Color.FromArgb(231, 229, 255);
+            dgvLoaiPhong.Location = new Point(0, 185);
+            dgvLoaiPhong.MultiSelect = false;
+            dgvLoaiPhong.Name = "dgvLoaiPhong";
+            dgvLoaiPhong.RowHeadersVisible = false;
+            dgvLoaiPhong.RowHeadersWidth = 51;
+            dgvLoaiPhong.Size = new Size(1324, 667);
+            dgvLoaiPhong.TabIndex = 111;
+            dgvLoaiPhong.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            dgvLoaiPhong.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dgvLoaiPhong.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dgvLoaiPhong.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dgvLoaiPhong.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dgvLoaiPhong.ThemeStyle.BackColor = Color.White;
+            dgvLoaiPhong.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dgvLoaiPhong.ThemeStyle.HeaderStyle.Height = 50;
+            dgvLoaiPhong.ThemeStyle.ReadOnly = false;
+            dgvLoaiPhong.ThemeStyle.RowsStyle.BackColor = Color.White;
+            dgvLoaiPhong.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvLoaiPhong.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            dgvLoaiPhong.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            dgvLoaiPhong.ThemeStyle.RowsStyle.Height = 29;
+            dgvLoaiPhong.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dgvLoaiPhong.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
             // panel2
             // 
@@ -150,7 +149,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1324, 182);
-            panel2.TabIndex = 118;
+            panel2.TabIndex = 119;
             // 
             // NgayTao
             // 
@@ -211,7 +210,7 @@
             txtTimKiem.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimKiem.IconLeftSize = new Size(40, 40);
             txtTimKiem.IconRight = (Image)resources.GetObject("txtTimKiem.IconRight");
-            txtTimKiem.Location = new Point(954, 112);
+            txtTimKiem.Location = new Point(2078, 112);
             txtTimKiem.Margin = new Padding(3, 5, 3, 5);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PasswordChar = '\0';
@@ -288,6 +287,7 @@
             btnThem.Size = new Size(160, 51);
             btnThem.TabIndex = 124;
             btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click;
             // 
             // guna2Panel2
             // 
@@ -437,10 +437,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1324, 856);
             Controls.Add(panel2);
-            Controls.Add(dgvNhanVien);
+            Controls.Add(dgvLoaiPhong);
             Name = "frmLoaiPhong";
             Text = "frmLoaiPhong";
-            ((System.ComponentModel.ISupportInitialize)dgvNhanVien).EndInit();
+            Load += frmLoaiPhong_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvLoaiPhong).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             guna2Panel2.ResumeLayout(false);
@@ -449,7 +450,7 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2DataGridView dgvNhanVien;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvLoaiPhong;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2DateTimePicker NgayTao;
         private Label label4;

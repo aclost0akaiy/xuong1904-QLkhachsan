@@ -42,29 +42,30 @@ namespace DAL_QLKS
         public List<KhachHang> selectAll()
         {
             string sql = "SELECT * FROM KhachHang";
-            return selectBySql(sql, new List<Object>());
+            return selectBySql(sql, []);
         }
         public KhachHang selectById(string id)
         {
             string sql = "SELECT * FROM KhachHang WHERE KhachHangID=@0";
-            List<Object> thamSo = new List<Object>();
-            thamSo.Add(id);
+            List<object> thamSo = [id];
             List<KhachHang> list = selectBySql(sql, thamSo);
             return list.Count > 0 ? list[0] : null;
         }
         public void insert(KhachHang entity)
         {
             string sql = "INSERT INTO KhachHang (KhachHangID, HoTen, DiaChi, GioiTinh, SoDienThoai, CCCD, NgayTao, TrangThai, GhiChu) VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8)";
-            List<object> thamSo = new List<object>();
-            thamSo.Add(entity.KhachHangID);
-            thamSo.Add(entity.HoTen);
-            thamSo.Add(entity.DiaChi);
-            thamSo.Add(entity.GioiTinh);
-            thamSo.Add(entity.SoDienThoai);
-            thamSo.Add(entity.CCCD);
-            thamSo.Add(entity.NgayTao);
-            thamSo.Add(entity.TrangThai);
-            thamSo.Add(entity.GhiChu);
+            List<object> thamSo =
+            [
+                entity.KhachHangID,
+                entity.HoTen,
+                entity.DiaChi,
+                entity.GioiTinh,
+                entity.SoDienThoai,
+                entity.CCCD,
+                entity.NgayTao,
+                entity.TrangThai,
+                entity.GhiChu,
+            ];
             DBUtil.Update(sql, thamSo);
         }
 

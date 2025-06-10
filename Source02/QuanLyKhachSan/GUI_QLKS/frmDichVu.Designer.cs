@@ -70,6 +70,7 @@
             label1 = new Label();
             dgvTrangThaiPhong = new Guna.UI2.WinForms.Guna2DataGridView();
             tabLoaiDV = new TabPage();
+            guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             panel1.SuspendLayout();
             guna2TabControl1.SuspendLayout();
             tabDichVu.SuspendLayout();
@@ -159,8 +160,8 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1310, 164);
-            panel2.TabIndex = 128;
+            panel2.Size = new Size(1310, 167);
+            panel2.TabIndex = 129;
             // 
             // txtMaHoaDon
             // 
@@ -195,7 +196,7 @@
             NgayTao.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             NgayTao.Name = "NgayTao";
             NgayTao.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            NgayTao.Size = new Size(288, 45);
+            NgayTao.Size = new Size(271, 45);
             NgayTao.TabIndex = 141;
             NgayTao.Value = new DateTime(2025, 6, 3, 17, 7, 25, 198);
             // 
@@ -214,7 +215,7 @@
             txtTimKiem.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimKiem.IconLeftSize = new Size(40, 40);
             txtTimKiem.IconRight = (Image)resources.GetObject("txtTimKiem.IconRight");
-            txtTimKiem.Location = new Point(926, 103);
+            txtTimKiem.Location = new Point(943, 103);
             txtTimKiem.Margin = new Padding(3, 5, 3, 5);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PasswordChar = '\0';
@@ -223,7 +224,7 @@
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtTimKiem.Size = new Size(362, 51);
             txtTimKiem.TabIndex = 140;
-            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged_1;
             // 
             // btnLamMoi
             // 
@@ -241,7 +242,7 @@
             btnLamMoi.Size = new Size(160, 51);
             btnLamMoi.TabIndex = 139;
             btnLamMoi.Text = "Làm Mới";
-            btnLamMoi.Click += btnLamMoi_Click;
+            btnLamMoi.Click += btnLamMoi_Click_1;
             // 
             // btnSua
             // 
@@ -259,7 +260,7 @@
             btnSua.Size = new Size(160, 51);
             btnSua.TabIndex = 138;
             btnSua.Text = "Sửa";
-            btnSua.Click += btnSua_Click_1;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -277,7 +278,7 @@
             btnXoa.Size = new Size(160, 51);
             btnXoa.TabIndex = 137;
             btnXoa.Text = "Xóa";
-            btnXoa.Click += btnXoa_Click;
+            btnXoa.Click += btnXoa_Click_1;
             // 
             // btnThem
             // 
@@ -295,7 +296,7 @@
             btnThem.Size = new Size(160, 51);
             btnThem.TabIndex = 136;
             btnThem.Text = "Thêm";
-            btnThem.Click += btnThem_Click;
+            btnThem.Click += btnThem_Click_1;
             // 
             // label4
             // 
@@ -409,14 +410,13 @@
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvTrangThaiPhong.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvTrangThaiPhong.Dock = DockStyle.Fill;
             dgvTrangThaiPhong.GridColor = Color.FromArgb(231, 229, 255);
-            dgvTrangThaiPhong.Location = new Point(3, 3);
+            dgvTrangThaiPhong.Location = new Point(2, 176);
             dgvTrangThaiPhong.MultiSelect = false;
             dgvTrangThaiPhong.Name = "dgvTrangThaiPhong";
             dgvTrangThaiPhong.RowHeadersVisible = false;
             dgvTrangThaiPhong.RowHeadersWidth = 51;
-            dgvTrangThaiPhong.Size = new Size(1310, 733);
+            dgvTrangThaiPhong.Size = new Size(1310, 563);
             dgvTrangThaiPhong.TabIndex = 127;
             dgvTrangThaiPhong.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvTrangThaiPhong.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -450,6 +450,21 @@
             tabLoaiDV.TabIndex = 1;
             tabLoaiDV.Text = "Loại Dịch Vụ";
             tabLoaiDV.UseVisualStyleBackColor = true;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            guna2ContextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            guna2ContextMenuStrip1.RenderStyle.ArrowColor = Color.FromArgb(151, 143, 255);
+            guna2ContextMenuStrip1.RenderStyle.BorderColor = Color.Gainsboro;
+            guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = Color.White;
+            guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = Color.FromArgb(100, 88, 255);
+            guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = Color.White;
+            guna2ContextMenuStrip1.RenderStyle.SeparatorColor = Color.Gainsboro;
+            guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            guna2ContextMenuStrip1.Size = new Size(61, 4);
             // 
             // frmDichVu
             // 
@@ -493,5 +508,6 @@
         private Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtMaDichVu;
         private Label label1;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }

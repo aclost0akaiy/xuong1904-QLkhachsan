@@ -13,7 +13,7 @@ namespace DTO_QLKS
         public int SoGiuong { get; set; }
         public DateTime NgayTao { get; set; }
         public string GhiChu { get; set; }
-        public bool TinhTrang { get; set; } // true: Đang Hoạt Động, false: Tạm Ngưng
-        public string TinhTrangText => TinhTrang ? "Đang Hoạt Động" : "Tạm Ngưng";
+        public bool TrangThai { get; set; } // true: Đang Hoạt Động, false: Tạm Ngưng
+        public string TrangThaiText => TrangThai ? "Đang Hoạt Động" : "Tạm Ngưng";
     }
 }

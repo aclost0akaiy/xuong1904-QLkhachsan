@@ -116,7 +116,6 @@
             lbChucNangText.Size = new Size(177, 27);
             lbChucNangText.TabIndex = 0;
             lbChucNangText.Text = "Quản Lý Phòng";
-            lbChucNangText.Click += lbChucNangText_Click;
             // 
             // guna2TabControl1
             // 
@@ -234,6 +233,7 @@
             dgvPhong.ThemeStyle.RowsStyle.Height = 29;
             dgvPhong.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvPhong.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvPhong.CellDoubleClick += dgvPhong_CellDoubleClick;
             // 
             // NgayTao
             // 
@@ -348,6 +348,7 @@
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtTimKiem.Size = new Size(362, 51);
             txtTimKiem.TabIndex = 110;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
             // txtMaPhong
             // 
@@ -389,6 +390,7 @@
             btnLamMoi.Size = new Size(160, 51);
             btnLamMoi.TabIndex = 109;
             btnLamMoi.Text = "Làm Mới";
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // label2
             // 
@@ -417,6 +419,7 @@
             btnSua.Size = new Size(160, 51);
             btnSua.TabIndex = 108;
             btnSua.Text = "Sửa";
+            btnSua.Click += btnSua_Click;
             // 
             // txtTenPhong
             // 
@@ -456,6 +459,7 @@
             btnXoa.Size = new Size(160, 51);
             btnXoa.TabIndex = 107;
             btnXoa.Text = "Xóa";
+            btnXoa.Click += btnXoa_Click;
             // 
             // label111
             // 
@@ -484,6 +488,7 @@
             btnThem.Size = new Size(160, 51);
             btnThem.TabIndex = 106;
             btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click;
             // 
             // label8
             // 
@@ -495,7 +500,6 @@
             label8.Size = new Size(79, 20);
             label8.TabIndex = 96;
             label8.Text = "Số Giường";
-            label8.Click += label8_Click;
             // 
             // guna2Panel2
             // 
@@ -623,7 +627,6 @@
             tabLoaiPhong.Size = new Size(1375, 740);
             tabLoaiPhong.TabIndex = 1;
             tabLoaiPhong.Text = "Loại Phòng";
-            tabLoaiPhong.Click += tabLoaiPhong_Click;
             // 
             // tabTrangThaiPhong
             // 

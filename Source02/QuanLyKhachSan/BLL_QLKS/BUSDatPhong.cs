@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL_QLKS;
+using DTO_QLKS;
 using DTO_QuanLyKhachSan;
 
 namespace BLL_QLKS
@@ -11,6 +12,25 @@ namespace BLL_QLKS
     public class BUSDatPhong
     {
         DALDatPhong dalDatPhong = new DALDatPhong();
+        DALKhachHang dalKhachHang = new DALKhachHang();
+        public string GenerateKhachHangID()
+        {
+            return dalKhachHang.generateKhachHangID();
+        }
+
+        // Phương thức lưu thông tin khách hàng
+        public string InsertKhachHang(KhachHang khachHang)
+        {
+            try
+            {
+                dalKhachHang.insert(khachHang);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return "Lỗi: " + ex.Message;
+            }
+        }
         public List<DatPhong> GetDatPhongList()
         {
             return dalDatPhong.selectAll(string.Empty);

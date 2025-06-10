@@ -421,6 +421,7 @@
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges16;
             txtTimKiem.Size = new Size(362, 51);
             txtTimKiem.TabIndex = 159;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
             // btnLamMoi
             // 
@@ -614,6 +615,7 @@
             dgvKhachHang.ThemeStyle.RowsStyle.Height = 29;
             dgvKhachHang.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvKhachHang.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvKhachHang.CellDoubleClick += dgvKhachHang_CellDoubleClick;
             // 
             // frmKhachHang
             // 
